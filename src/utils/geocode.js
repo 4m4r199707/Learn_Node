@@ -12,7 +12,6 @@ const geocode = (address,callback) => {
             callback('Unable to find location. Try another location')
         }
         else{
-           
             const latitude = response.body.features[0].center[1]
             const longitude = response.body.features[0].center[0]
             const place = response.body.features[0].place_name
